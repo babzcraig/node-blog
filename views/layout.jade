@@ -1,7 +1,20 @@
 doctype html
 html
   head
-    title= title
+    title Node Blog
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    img.logo(src="/images/logo.jpg" style='width: 180px')
+    .container
+      .nav
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/posts/add') Add Post
+          li
+            a(href='/categories/add') Add Category
+      != messages()
+      block content
+      footer
+        p Node Blog &copy; Red Bracket 2017
