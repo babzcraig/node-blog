@@ -6,7 +6,7 @@ block content
     if errors
       each error, i in errors
         li.alert.alert-danger #{error.msg}
-  form(method='post', action='/posts/add')
+  form(method='post', action='/posts/add', enctype='multipart/form-data')
     .form-group
       label Title:
       input.form-control(name='title', type='text')
