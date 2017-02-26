@@ -11,10 +11,12 @@ var multer  = require('multer');
 var upload = multer({ dest: './public/images/uploads' });
 var flash = require('connect-flash');
 var bodyParser = require('body-parser');
+
 var index = require('./routes/index');
-var users = require('./routes/users');
+var posts = require('./routes/posts');
 
 var app = express();
+
 app.locals.moment = require('moment');
 
 // view engine setup
@@ -76,7 +78,7 @@ app.use(function(req,res,next) {
 
 //Set up routes
 app.use('/', index);
-app.use('/users', users);
+app.use('/posts', posts);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

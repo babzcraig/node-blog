@@ -68,8 +68,8 @@ a {
 }
 
 .nav a.current, .nav a:hover {
-  background: #83cd29;
-  color: #262626;
+  background: #ba0303;
+  color: #eee;
 }
 
 .meta {
@@ -88,4 +88,29 @@ a.more {
 .post {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+}
+
+input,select, textarea {
+  margin-bottom: 16px;
+}
+
+input[type='text'], select, textarea {
+  padding: 3px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+select {
+  height: 28px;
+}
+
+textarea {
+  height: 70px;
+  width: 400px;
 }
