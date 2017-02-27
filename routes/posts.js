@@ -5,6 +5,16 @@ var db = require('monk')('localhost/nodeblog');
 var multer  = require('multer');
 var upload = multer({ dest: './public/images/uploads' });
 
+
+router.get('/show/:id', function(req,res, next) {
+  var posts = db.get('posts');
+  posts.findById(req.params.id, function(err, post) {
+    res.render('show', {
+      'post': post
+    });
+  })
+});
+
 //
 router.get('/add', function(req, res, next) {
   var categories = db.get('categories');
