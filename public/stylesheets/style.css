@@ -90,6 +90,12 @@ a.more {
   padding-bottom: 20px;
 }
 
+.post img {
+  width: 25%;
+  display: block;
+  margin: 16px auto;
+}
+
 label {
   display: inline-block;
   width: 180px;
