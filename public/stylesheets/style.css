@@ -120,3 +120,18 @@ textarea {
   height: 70px;
   width: 400px;
 }
+
+.comment-form {
+  margin: 30px;
+}
+
+.comment {
+  background: #ccc;
+  padding: 5px;
+  border: #666 solid 1px;
+  margin: 15px 0 20px;
+}
+
+.comment-name {
+  font-weight: bold;
+}
